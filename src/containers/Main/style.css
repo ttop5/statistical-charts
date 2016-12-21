@@ -1,0 +1,13 @@
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.content .main {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.content .main .cat {
+  margin-top: 20px;
+}
