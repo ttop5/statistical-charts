@@ -1,9 +1,9 @@
 import Hapi from 'hapi';
 import h2o2 from 'h2o2';
 import inert from 'inert';
+
 import main from './handlers/main';
 import staticFiles from './handlers/staticFiles';
-import name from './handlers/name';
 
 
 /**
@@ -20,7 +20,7 @@ server.register(
   }
 );
 
-server.route([main, staticFiles, name]);
+server.route([main, staticFiles]);
 
 export function runServer() {
   server.start(() => {
@@ -37,4 +37,3 @@ export default {
   server,
   runServer,
 };
-
