@@ -37,8 +37,8 @@ class Main extends Component {
 
   render() {
     return (
-      <div className={style.content}>
-        <div className={style.main} >
+      <div className={style.main}>
+        <div className={style.content} >
           <h1>statistical-charts</h1>
         </div>
       </div>
