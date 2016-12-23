@@ -6,6 +6,11 @@ import { connect } from 'react-redux';
 import { SectionsContainer, Section } from 'react-fullpage';
 
 import * as MainActions from './actions';
+import FirstPage from './components/FirstPage';
+import SecondPage from './components/SecondPage';
+import ThirdPage from './components/ThirdPage';
+import FourthPage from './components/FourthPage';
+import FifthPage from './components/FifthPage';
 
 
 function mapStateToProps(state) {
@@ -51,11 +56,21 @@ class Main extends Component {
       <div className={style.main}>
         <div className={style.content} >
           <SectionsContainer className="container" {...options}>
-            <Section className={style.section1} color="#007760">Page 1</Section>
-            <Section color="#00bcd4">Page 2</Section>
-            <Section color="#eeeeee">Page 3</Section>
-            <Section color="#eeeeee">Page 4</Section>
-            <Section color="#eeeeee">Page 5</Section>
+            <Section className={style.section1} color="#007760">
+              <FirstPage />
+            </Section>
+            <Section color="#00bcd4">
+              <SecondPage />
+            </Section>
+            <Section color="#eeeeee">
+              <ThirdPage />
+            </Section>
+            <Section color="#eeeeee">
+              <FourthPage />
+            </Section>
+            <Section color="#eeeeee">
+              <FifthPage />
+            </Section>
           </SectionsContainer>
         </div>
       </div>
