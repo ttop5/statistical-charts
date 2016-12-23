@@ -5034,7 +5034,7 @@ querystringify@0.0.x:
   version "0.0.4"
   resolved "https://registry.yarnpkg.com/querystringify/-/querystringify-0.0.4.tgz#0cf7f84f9463ff0ae51c4c4b142d95be37724d9c"
 
-raf@~3.3.0:
+raf@3.x, raf@~3.3.0:
   version "3.3.0"
   resolved "https://registry.yarnpkg.com/raf/-/raf-3.3.0.tgz#93845eeffc773f8129039f677f80a36044eee2c3"
   dependencies:
@@ -5211,6 +5211,14 @@ rc-rate@~1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/rc-rate/-/rc-rate-1.1.2.tgz#97706ef0615b5a0f4ee873898a743a4d7229f574"
 
+rc-scroll-anim@^0.6.2:
+  version "0.6.2"
+  resolved "https://registry.yarnpkg.com/rc-scroll-anim/-/rc-scroll-anim-0.6.2.tgz#20d0a25792d80611947a8efb9541685f032ad182"
+  dependencies:
+    raf "3.x"
+    rc-tween-one "~0.11.6"
+    tween-functions "1.x"
+
 rc-select@~6.5.1:
   version "6.5.2"
   resolved "https://registry.yarnpkg.com/rc-select/-/rc-select-6.5.2.tgz#fb6e4e564e94276c20483490020654acd8b9bf31"
@@ -5306,7 +5314,7 @@ rc-trigger@1.x, rc-trigger@^1.7.1:
     rc-animate "2.x"
     rc-util "4.x"
 
-rc-tween-one@^0.11.11:
+rc-tween-one@^0.11.11, rc-tween-one@~0.11.6:
   version "0.11.11"
   resolved "https://registry.yarnpkg.com/rc-tween-one/-/rc-tween-one-0.11.11.tgz#2144addfb26275c2439e81fac7ebdfaec014b999"
   dependencies:
@@ -6405,7 +6413,7 @@ tunnel-agent@~0.4.1:
   version "0.4.3"
   resolved "https://registry.yarnpkg.com/tunnel-agent/-/tunnel-agent-0.4.3.tgz#6373db76909fe570e08d73583365ed828a74eeeb"
 
-tween-functions@~1.2.0:
+tween-functions@1.x, tween-functions@~1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/tween-functions/-/tween-functions-1.2.0.tgz#1ae3a50e7c60bb3def774eac707acbca73bbc3ff"
 

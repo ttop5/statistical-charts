@@ -11,6 +11,7 @@ import SecondPage from './components/SecondPage';
 import ThirdPage from './components/ThirdPage';
 import FourthPage from './components/FourthPage';
 import FifthPage from './components/FifthPage';
+import Footer from 'components/Footer';
 
 
 function mapStateToProps(state) {
@@ -70,6 +71,7 @@ class Main extends Component {
             </Section>
             <Section color="#eeeeee">
               <FifthPage />
+              <Footer />
             </Section>
           </SectionsContainer>
         </div>
