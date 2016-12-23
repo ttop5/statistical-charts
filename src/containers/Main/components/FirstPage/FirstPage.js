@@ -47,7 +47,7 @@ class FirstPage extends Component {
             <p
               key="content"
             >
-              带您直观了解关于 SDUT OJ 背后的大数据
+              带您一起探索关于 SDUT OJ 背后的那些大数据
             </p>
             <Button type="ghost" key="button" className={style.button}>
               <a href="http://sdutacm.org/">Go to Online Judge</a>
