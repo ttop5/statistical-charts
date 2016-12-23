@@ -1,0 +1,24 @@
+.firstpage {
+  color: #fff;
+}
+
+.firstpage h1 {
+  font-size: 5em;
+}
+
+.button {
+  margin-top: 2em;
+  color: #fff;
+}
+
+.content {
+  text-align: center;
+  margin-top: 14%;
+}
+
+.arraw {
+  position: absolute;
+  top: 19%;
+  left: 49%;
+  font-size: 2.5em;
+}

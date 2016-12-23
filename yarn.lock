@@ -4588,6 +4588,10 @@ pbkdf2@^3.0.3:
   dependencies:
     create-hmac "^1.1.2"
 
+performance-now@~0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/performance-now/-/performance-now-0.2.0.tgz#33ef30c5c77d4ea21c5a53869d91b56d8f2555e5"
+
 pez@2.x.x:
   version "2.1.4"
   resolved "https://registry.yarnpkg.com/pez/-/pez-2.1.4.tgz#73f822fa62d599d65c4606f490d54d345191bc7c"
@@ -5030,6 +5034,12 @@ querystringify@0.0.x:
   version "0.0.4"
   resolved "https://registry.yarnpkg.com/querystringify/-/querystringify-0.0.4.tgz#0cf7f84f9463ff0ae51c4c4b142d95be37724d9c"
 
+raf@~3.3.0:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/raf/-/raf-3.3.0.tgz#93845eeffc773f8129039f677f80a36044eee2c3"
+  dependencies:
+    performance-now "~0.2.0"
+
 randomatic@^1.1.3:
   version "1.1.6"
   resolved "https://registry.yarnpkg.com/randomatic/-/randomatic-1.1.6.tgz#110dcabff397e9dcff7c0789ccc0a49adf1ec5bb"
@@ -5179,6 +5189,12 @@ rc-progress@~2.0.1:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/rc-progress/-/rc-progress-2.0.3.tgz#1755a04c2e368af2fbd93ace8abc9dc91aab6bd5"
 
+rc-queue-anim@^0.13.0:
+  version "0.13.0"
+  resolved "https://registry.yarnpkg.com/rc-queue-anim/-/rc-queue-anim-0.13.0.tgz#8d4e39bf92da6654947e8b0cd0b71c6d86bea3aa"
+  dependencies:
+    velocity-animate "~1.3.1"
+
 rc-queue-anim@~0.12.4:
   version "0.12.6"
   resolved "https://registry.yarnpkg.com/rc-queue-anim/-/rc-queue-anim-0.12.6.tgz#fee0f1b122e5db7d7f01ddc12634ccf5ef2a3b12"
@@ -5289,6 +5305,14 @@ rc-trigger@1.x, rc-trigger@^1.7.1:
     rc-align "2.x"
     rc-animate "2.x"
     rc-util "4.x"
+
+rc-tween-one@^0.11.11:
+  version "0.11.11"
+  resolved "https://registry.yarnpkg.com/rc-tween-one/-/rc-tween-one-0.11.11.tgz#2144addfb26275c2439e81fac7ebdfaec014b999"
+  dependencies:
+    raf "~3.3.0"
+    style-utils "~0.1.13"
+    tween-functions "~1.2.0"
 
 rc-upload@^2.0.4, rc-upload@~2.1.0:
   version "2.1.1"
@@ -6133,6 +6157,10 @@ style-search@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/style-search/-/style-search-0.1.0.tgz#7958c793e47e32e07d2b5cafe5c0bf8e12e77902"
 
+style-utils@~0.1.13:
+  version "0.1.13"
+  resolved "https://registry.yarnpkg.com/style-utils/-/style-utils-0.1.13.tgz#9df5c750daa41865f2238fd16f6e12b93a0a26a0"
+
 stylehacks@^2.3.0:
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/stylehacks/-/stylehacks-2.3.1.tgz#de49e8baa2e12b29c35b416b337094839bc97b35"
@@ -6377,6 +6405,10 @@ tunnel-agent@~0.4.1:
   version "0.4.3"
   resolved "https://registry.yarnpkg.com/tunnel-agent/-/tunnel-agent-0.4.3.tgz#6373db76909fe570e08d73583365ed828a74eeeb"
 
+tween-functions@~1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/tween-functions/-/tween-functions-1.2.0.tgz#1ae3a50e7c60bb3def774eac707acbca73bbc3ff"
+
 tweetnacl@^0.14.3, tweetnacl@~0.14.0:
   version "0.14.5"
   resolved "https://registry.yarnpkg.com/tweetnacl/-/tweetnacl-0.14.5.tgz#5ae68177f192d4456269d108afa93ff8743f4f64"
@@ -6548,6 +6580,10 @@ velocity-animate@~1.2.3:
   resolved "https://registry.yarnpkg.com/velocity-animate/-/velocity-animate-1.2.3.tgz#f8b7c66fef9cfd5acfa605cdf0adca8e302db728"
   dependencies:
     jquery ">= 1.4.3"
+
+velocity-animate@~1.3.1:
+  version "1.3.2"
+  resolved "https://registry.yarnpkg.com/velocity-animate/-/velocity-animate-1.3.2.tgz#eb90d4ddb5f818c35937380b4b7df59934a26c3b"
 
 vendors@^1.0.0:
   version "1.0.1"

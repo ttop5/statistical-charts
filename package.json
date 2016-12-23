@@ -26,6 +26,8 @@
     "inert": "4.0.2",
     "isomorphic-style-loader": "1.0.0",
     "normalize.css": "5.0.0",
+    "rc-queue-anim": "^0.13.0",
+    "rc-tween-one": "^0.11.11",
     "react": "15.3.2",
     "react-dom": "15.3.2",
     "react-fullpage": "^0.1.16",
