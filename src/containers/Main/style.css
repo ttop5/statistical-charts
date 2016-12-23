@@ -3,20 +3,10 @@
   src: url('/fonts/DS-DigitalBold.ttf') format('truetype');
 }
 
-.main {
-  position: absolute;
-  width: 100%;
-  height: 100%;
+.section1 {
   background-image: url(images/background.jpg);
   background-size: cover;
   background-position: center center;
   background-blend-mode: normal;
   background-attachment: fixed;
-}
-
-.content {
-  position: relative;
-  width: 1366px;
-  margin-left: auto;
-  margin-left: auto;
 }
