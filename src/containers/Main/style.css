@@ -1,8 +1,3 @@
-@font-face {
-  font-family: 'Counter';
-  src: url('/fonts/DS-DigitalBold.ttf') format('truetype');
-}
-
 .section1 {
   background-image: url(images/section1_bg.jpg);
   background-size: cover;

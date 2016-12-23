@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'Counter';
+  src: url('fonts/DS-DigitalBold.ttf') format('truetype');
+}
+
+.countTitle {
+  text-align: center;
+  margin-bottom: -10px;
+}
+
+.countTitle > span:nth-child(1) {
+  font-size: 5em;
+  font-family: 'Counter';
+  color: #c30000;
+}
+
+.countTitle > span:nth-child(2) {
+  margin-left: 10px;
+}
+
+.line {
+  position: absolute;
+  width: 28em;
+  left: 50%;
+  margin-left: -14em;
+  border-top: 1px solid red;
+}

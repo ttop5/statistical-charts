@@ -60,7 +60,7 @@ class Main extends Component {
             <Section className={style.section1} color="#007760">
               <FirstPage />
             </Section>
-            <Section color="#00bcd4">
+            <Section color="#fff">
               <SecondPage />
             </Section>
             <Section color="#eeeeee">
