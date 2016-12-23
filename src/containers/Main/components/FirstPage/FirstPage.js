@@ -26,15 +26,25 @@ class FirstPage extends Component {
   render() {
     const { className } = this.props;
 
+    /* eslint-disable */
     return (
       <div
         style={this.props.style}
         className={classnames(...className.split(), style.firstpage)}
       >
+        <div className={style.star}>
+          <iframe src="https://ghbtns.com/github-btn.html?user=ttop5&repo=statistical-charts&type=star&count=true"
+            frameBorder="0"
+            scrolling="0"
+            width="170px"
+            height="20px">
+          </iframe>
+        </div>
+
         <div className={style.content}>
           <QueueAnim
             type={['bottom', 'top']}
-            delay={200}
+            delay={500}
             className={`${this.props.className}-wrapper`}
             key="text"
           >
@@ -42,7 +52,7 @@ class FirstPage extends Component {
               className="title"
               key="title"
             >
-              <h1>STATISTICAL CHART</h1>
+              <h1>STATISTICAL CHARTS</h1>
             </span>
             <p
               key="content"
@@ -54,6 +64,7 @@ class FirstPage extends Component {
             </Button>
           </QueueAnim>
         </div>
+
         <div className={style.arraw}>
           <TweenOne
             animation={{ y: '-=20', yoyo: true, repeat: -1, duration: 1000 }}
@@ -63,6 +74,7 @@ class FirstPage extends Component {
             <Icon type="down" />
           </TweenOne>
         </div>
+
       </div>
     );
   }

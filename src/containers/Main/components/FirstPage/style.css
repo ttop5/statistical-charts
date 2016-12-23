@@ -2,6 +2,12 @@
   color: #fff;
 }
 
+.star {
+  position: absolute;
+  margin-top: -12%;
+  margin-left: 92%;
+}
+
 .firstpage h1 {
   font-size: 5em;
 }
