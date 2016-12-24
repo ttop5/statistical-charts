@@ -60,16 +60,16 @@ class Main extends Component {
             <Section className={style.section1}>
               <FirstPage />
             </Section>
-            <Section color="#f0f4fa">
+            <Section color="#fff">
               <SecondPage />
             </Section>
-            <Section color="#eeeeee">
+            <Section color="#f9f9f9">
               <ThirdPage />
             </Section>
-            <Section color="#eeeeee">
+            <Section color="#fff">
               <FourthPage />
             </Section>
-            <Section color="#eeeeee">
+            <Section color="#f9f9f9">
               <FifthPage />
               <Footer />
             </Section>
