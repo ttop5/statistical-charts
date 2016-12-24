@@ -38,9 +38,11 @@ class Footer extends Component {
             animation={{ y: '+=30', opacity: 0, type: 'from' }}
             key="footer"
           >
-            <span>
-              Copyright © 2016 The Project by <a href="https://ttop5.github.io/blog/">ttop5</a>. All Rights Reserved
-            </span>
+            <div className={style.content}>
+              <span>Design by <a href="https://ttop5.github.io/blog/">ttop5</a></span>
+              <pre />
+              <span>Copyright © 2017 <a href="http://sdutacm.org/blog/">SDUTACM运维技术中心</a>. All Rights Reserved</span>
+            </div>
           </TweenOne>
         </OverPack>
       </div>

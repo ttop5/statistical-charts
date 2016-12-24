@@ -48,16 +48,11 @@ class FirstPage extends Component {
             className={`${this.props.className}-wrapper`}
             key="text"
           >
-            <span
-              className="title"
-              key="title"
-            >
+            <span className="title" key="title">
               <h1>STATISTICAL CHARTS</h1>
             </span>
-            <p
-              key="content"
-            >
-              带您一起探索关于 SDUT OJ 背后的那些大数据
+            <p key="content">
+              带您一起探索关于 SDUT OJ 背后的那些 "大数据"
             </p>
             <Button type="ghost" key="button" className={style.button}>
               <a href="http://sdutacm.org/">Go to Online Judge</a>
