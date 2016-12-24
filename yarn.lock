@@ -2120,6 +2120,12 @@ ecc-jsbn@~0.1.1:
   dependencies:
     jsbn "~0.1.0"
 
+echarts@^3.3.2:
+  version "3.3.2"
+  resolved "https://registry.yarnpkg.com/echarts/-/echarts-3.3.2.tgz#06f42a47d213248d45fe585719ec8940fdc610aa"
+  dependencies:
+    zrender "^3.2.1"
+
 ee-first@1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/ee-first/-/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
@@ -6887,3 +6893,7 @@ yargs@~3.10.0:
 yeast@0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/yeast/-/yeast-0.1.2.tgz#008e06d8094320c372dbc2f8ed76a0ca6c8ac419"
+
+zrender@^3.2.1:
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/zrender/-/zrender-3.2.2.tgz#b33d250456859944a48c4f3550986168a0952ec5"

@@ -57,10 +57,10 @@ class Main extends Component {
       <div className={style.main}>
         <div className={style.content} >
           <SectionsContainer className="container" {...options}>
-            <Section className={style.section1} color="#007760">
+            <Section className={style.section1}>
               <FirstPage />
             </Section>
-            <Section color="#fff">
+            <Section color="#f0f4fa">
               <SecondPage />
             </Section>
             <Section color="#eeeeee">
