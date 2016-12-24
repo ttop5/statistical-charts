@@ -14,12 +14,18 @@
 
 .button {
   margin-top: 2em;
+  font-size: 1.5em;
   color: #fff;
 }
 
 .content {
   text-align: center;
   margin-top: 14%;
+}
+
+.content p {
+  margin-top: 1.5em;
+  font-size: 1.2em;
 }
 
 .arraw {
