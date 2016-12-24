@@ -73,8 +73,8 @@ class Main extends Component {
             </Section>
             <Section color="#f9f9f9">
               <FifthPage />
-              <Footer />
             </Section>
+            <Footer />
           </SectionsContainer>
         </div>
       </div>
