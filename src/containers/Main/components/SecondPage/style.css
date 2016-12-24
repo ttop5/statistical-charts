@@ -32,8 +32,8 @@
 
 .line {
   position: absolute;
-  width: 30em;
+  width: 28em;
   left: 50%;
-  margin-left: -15em;
+  margin-left: -14em;
   border-top: 1px solid #3cbcf5;
 }

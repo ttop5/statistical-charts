@@ -67,7 +67,7 @@ class SecondPage extends Component {
             className={`${this.props.className}-img`}
           >
             <div className={style.countTitle}>
-              <span>OJ总提交数</span>
+              <span>提交总数</span>
               <span>{formatNumberRgx(submitCount)}</span>
             </div>
             <div className={style.line}></div>
