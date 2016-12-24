@@ -29,8 +29,7 @@ class LineCahrt extends Component {
     const count = get(data, 'count', []);
     const myChart = echarts.init(document.getElementById(idName));
     const option = {
-      color: ['#99cef7', '#666', '#000'],
-      calculable: true,
+      color: ['#99cef7'],
       tooltip: {
         trigger: 'axis',
       },
@@ -43,26 +42,21 @@ class LineCahrt extends Component {
         bottom: '0',
       },
       xAxis: [{
-        boundaryGap: false,
         type: 'category',
         data: time,
       }],
       yAxis: [{
-        show: true,
         type: 'value',
         position: 'left',
-        boundaryGap: false,
       }],
       series: [{
-        name: '提交数',
         type: 'line',
-        legendHoverLink: true,
+        name: '提交数',
         itemStyle: {
           emphasis: {
             color: '#99cef7',
-            opacity: 1,
-            borderColor: '#fff',
-            borderWidth: '9',
+            borderColor: '#02abf7',
+            borderWidth: '2',
           },
         },
         areaStyle: {
