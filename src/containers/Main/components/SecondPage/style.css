@@ -19,20 +19,21 @@
   margin-bottom: -10px;
 }
 
+.countTitle > span:nth-child(1) {
+  font-size: 1.5em;
+  margin-right: 10px;
+}
+
 .countTitle > span:nth-child(2) {
   font-size: 5em;
   font-family: 'Counter';
   color: #02abf7;
 }
 
-.countTitle > span:nth-child(1) {
-  margin-right: 10px;
-}
-
 .line {
   position: absolute;
-  width: 28em;
+  width: 30em;
   left: 50%;
-  margin-left: -14em;
+  margin-left: -15em;
   border-top: 1px solid #3cbcf5;
 }
