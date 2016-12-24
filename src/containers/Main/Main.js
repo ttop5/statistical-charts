@@ -3,6 +3,7 @@ import style from './style.css';
 import React, { Component, PropTypes } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
+import { BackTop } from 'antd';
 import { SectionsContainer, Section } from 'react-fullpage';
 
 import * as MainActions from './actions';
@@ -55,6 +56,7 @@ class Main extends Component {
 
     return (
       <div className={style.main}>
+        <BackTop />
         <div className={style.content} >
           <SectionsContainer className="container" {...options}>
             <Section className={style.section1}>
