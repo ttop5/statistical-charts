@@ -65,13 +65,13 @@ class Main extends Component {
             <Section color="#fff">
               <SecondPage />
             </Section>
-            <Section color="#f9f9f9">
+            <Section color="#fdfcfc">
               <ThirdPage />
             </Section>
             <Section color="#fff">
               <FourthPage />
             </Section>
-            <Section color="#f9f9f9">
+            <Section color="#fdfcfc">
               <FifthPage />
             </Section>
             <Footer />
