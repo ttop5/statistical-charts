@@ -25,7 +25,6 @@ class VerticalBarChart extends Component {
     const option = {
       title: {
         text: '题目低通过率Top10',
-        position: 'right',
         textStyle: {
           fontWeight: 'normal',
         },
