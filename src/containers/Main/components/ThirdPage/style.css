@@ -1,8 +1,8 @@
-.thirdpage span {
+.countTitle span {
   position: absolute;
   left: 50%;
   margin-top: 50px;
-  margin-left: -2.5em;
+  margin-left: -2em;
   font-size: 2.5em;
 }
 
@@ -12,5 +12,8 @@
   padding-left: 50px;
   float: left;
   width: 50%;
-  border: 1px solid #ddd;
+}
+
+.chartDiv:nth-child(1) {
+  border-right: 1px solid #ddd;
 }

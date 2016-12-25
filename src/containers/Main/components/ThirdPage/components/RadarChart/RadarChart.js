@@ -29,6 +29,11 @@ class RadarChart extends Component {
       },
       radar: [
         {
+          name: {
+            textStyle: {
+              color: '#666',
+            },
+          },
           indicator: [
             { text: 'C', max: 1335 },
             { text: 'C++', max: 1335 },
@@ -36,7 +41,7 @@ class RadarChart extends Component {
             { text: 'Python2', max: 1335 },
             { text: 'Python3', max: 1335 },
           ],
-          center: ['54%', '55%'],
+          center: ['54%', '52%'],
           radius: 200,
         },
       ],
