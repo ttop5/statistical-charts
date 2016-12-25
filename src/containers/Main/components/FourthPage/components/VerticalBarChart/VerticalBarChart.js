@@ -27,6 +27,7 @@ class VerticalBarChart extends Component {
         text: '题目低通过率Top10',
         textStyle: {
           fontWeight: 'normal',
+          color: '#999',
         },
       },
       color: ['#3398DB'],

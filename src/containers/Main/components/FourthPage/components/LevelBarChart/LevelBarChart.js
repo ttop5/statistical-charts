@@ -27,6 +27,7 @@ class LevelBarChart extends Component {
         text: '题目提交量Top10',
         textStyle: {
           fontWeight: 'normal',
+          color: '#999',
         },
       },
       tooltip: {
