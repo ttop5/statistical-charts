@@ -2,7 +2,7 @@
   position: absolute;
   left: 50%;
   margin-top: 50px;
-  margin-left: -2em;
+  margin-left: -2.5em;
   font-size: 2.5em;
 }
 
@@ -11,7 +11,7 @@
   padding-top: 10px;
   padding-left: 50px;
   float: left;
-  width: 50%;
+  width: 49%;
 }
 
 .chartDiv:nth-child(1) {
