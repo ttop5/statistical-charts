@@ -28,41 +28,40 @@ class PieChart extends Component {
       color: ['#2196f3', '#1f939e', '#00bcd4', '#009688', '#37bdab'],
       tooltip: {
         trigger: 'item',
-        formatter: '{a} <br/>{b}: {d}%',
+        formatter: '{a} <br/>{b} : {d}%',
       },
       legend: {
         orient: 'vertical',
         x: 'left',
         data: ['C', 'C++', 'Java', 'Python2', 'Python3'],
       },
+      calculable: true,
       series: [
         {
           name: '提交语言',
           type: 'pie',
-          radius: ['55%', '85%'],
-          center: ['55%', '52%'],
-          avoidLabelOverlap: false,
+          radius: [80, 180],
+          center: ['45%', '50%'],
+          roseType: 'radius',
           label: {
             normal: {
               show: false,
-              position: 'center',
             },
             emphasis: {
               show: true,
-              textStyle: {
-                fontSize: '40',
-                fontWeight: 'bold',
-              },
             },
           },
-          labelLine: {
+          lableLine: {
             normal: {
               show: false,
+            },
+            emphasis: {
+              show: true,
             },
           },
           data: [
             { value: 1335, name: 'C' },
-            { value: 1310, name: 'C++' },
+            { value: 1000, name: 'C++' },
             { value: 234, name: 'Java' },
             { value: 135, name: 'Python2' },
             { value: 48, name: 'Python3' },
