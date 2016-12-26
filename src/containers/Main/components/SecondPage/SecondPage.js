@@ -2,10 +2,10 @@ import style from './style.css';
 
 import classnames from 'classnames';
 import React, { Component, PropTypes } from 'react';
+import { Tabs, Icon } from 'antd';
 import QueueAnim from 'rc-queue-anim';
 import TweenOne from 'rc-tween-one';
 import OverPack from 'rc-scroll-anim/lib/ScrollOverPack';
-import { Tabs, Icon } from 'antd';
 
 import LineCahrt from './components/LineCahrt';
 import { formatNumberRgx } from 'utils/commons';
@@ -33,7 +33,7 @@ class SecondPage extends Component {
   render() {
     const { className } = this.props;
     const submitCount = 2216008;
-    const [dayName, monthName, yearName] = ['dayLineChart', 'monthLineChart', 'yearLineChart'];
+    const [dayIdName, monthIdName, yearIdName] = ['dayLineChart', 'monthLineChart', 'yearLineChart'];
     const dayData = {
       time: ['00:00', '01:00', '02:00', '03:00', '04:00', '05:00', '06:00', '07:00', '08:00', '09:00', '10:00', '11:00',
              '12:00', '13:00', '14:00', '15:00', '16:00', '17:00', '18:00', '19:00', '20:00', '21:00', '22:00', '23:00'],
@@ -82,19 +82,19 @@ class SecondPage extends Component {
             <Tabs key="tabs" tabPosition="left">
               <TabPane tab={<span><Icon type="dot-chart" />最近一天</span>} key="1">
                 <LineCahrt
-                  idName={dayName}
+                  idName={dayIdName}
                   data={dayData}
               />
               </TabPane>
               <TabPane tab={<span><Icon type="bar-chart" />最近一月</span>} key="2">
                 <LineCahrt
-                  idName={monthName}
+                  idName={monthIdName}
                   data={monthData}
                 />
               </TabPane>
               <TabPane tab={<span><Icon type="area-chart" />最近一年</span>} key="3">
                 <LineCahrt
-                  idName={yearName}
+                  idName={yearIdName}
                   data={yearData}
                 />
               </TabPane>
