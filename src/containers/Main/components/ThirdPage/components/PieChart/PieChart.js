@@ -47,16 +47,10 @@ class PieChart extends Component {
             normal: {
               show: false,
             },
-            emphasis: {
-              show: true,
-            },
           },
           lableLine: {
             normal: {
               show: false,
-            },
-            emphasis: {
-              show: true,
             },
           },
           data: [
