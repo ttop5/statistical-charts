@@ -10,7 +10,7 @@ class PieChart extends Component {
     style: PropTypes.string,
     className: PropTypes.string,
     idName: PropTypes.string.isRequired,
-    chartData: PropTypes.object.isRequired,
+    chartData: PropTypes.array.isRequired,
   };
 
   static defaultProps = {
