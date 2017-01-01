@@ -10,6 +10,7 @@ class PieChart extends Component {
     style: PropTypes.string,
     className: PropTypes.string,
     idName: PropTypes.string.isRequired,
+    pieName: PropTypes.string.isRequired,
     chartData: PropTypes.array.isRequired,
   };
 
@@ -23,7 +24,7 @@ class PieChart extends Component {
   }
 
   componentDidMount() {
-    const { idName, chartData } = this.props;
+    const { idName, pieName, chartData } = this.props;
     const myChart = echarts.init(document.getElementById(idName));
     const option = {
       color: ['#2196f3', '#1f939e', '#00bcd4', '#009688', '#37bdab'],
@@ -33,7 +34,7 @@ class PieChart extends Component {
       },
       series: [
         {
-          name: '用户学校分布',
+          name: pieName,
           type: 'pie',
           radius: '85%',
           center: ['50%', '55%'],

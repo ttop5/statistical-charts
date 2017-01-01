@@ -30,13 +30,14 @@ class FifthPage extends Component {
 
   render() {
     const { className } = this.props;
-    const [collegeIdName, schoolIdName, majorIdName] = ['collegePieChart', 'schoolPieChart', 'majorPieChart'];
-    const collegePieChartData = [
-      { value: 2335, name: '山东理工' },
-      { value: 310, name: '山东科技' },
-      { value: 234, name: '中国石油(华东)' },
-      { value: 135, name: '青岛理工' },
-      { value: 548, name: '青岛大学' },
+    const [majorIdName, schoolIdName, collegeIdName] = ['majorPieChart', 'schoolPieChart', 'collegePieChart'];
+    const [majorPieName, schoolPieName, collegePieName] = ['用户专业分布', '用户学院分布', '用户学校分布'];
+    const majorPieChartData = [
+      { value: 2935, name: '计算机科学与技术' },
+      { value: 310, name: '软件工程' },
+      { value: 234, name: '通信工程' },
+      { value: 135, name: '高分子材料' },
+      { value: 48, name: '生物化学' },
     ];
     const schoolPieChartData = [
       { value: 335, name: '计算机学院' },
@@ -45,12 +46,12 @@ class FifthPage extends Component {
       { value: 135, name: '理学院' },
       { value: 548, name: '材料学院' },
     ];
-    const majorPieChartData = [
-      { value: 2935, name: '计算机科学与技术' },
-      { value: 310, name: '软件工程' },
-      { value: 234, name: '通信工程' },
-      { value: 135, name: '高分子材料' },
-      { value: 48, name: '生物化学' },
+    const collegePieChartData = [
+      { value: 2335, name: '山东理工' },
+      { value: 310, name: '山东科技' },
+      { value: 234, name: '中国石油(华东)' },
+      { value: 135, name: '青岛理工' },
+      { value: 548, name: '青岛大学' },
     ];
 
     /* eslint-disable */
@@ -84,18 +85,21 @@ class FifthPage extends Component {
               <TabPane tab={<span><Icon type="pie-chart" />专业分布</span>} key="1">
                 <PieChart
                   idName={majorIdName}
+                  pieName={majorPieName}
                   chartData={majorPieChartData}
                 />
               </TabPane>
               <TabPane tab={<span><Icon type="pie-chart" />学院分布</span>} key="2">
                 <PieChart
                   idName={schoolIdName}
+                  pieName={schoolPieName}
                   chartData={schoolPieChartData}
                 />
               </TabPane>
               <TabPane tab={<span><Icon type="pie-chart" />学校分布</span>} key="3">
                 <PieChart
                   idName={collegeIdName}
+                  pieName={collegePieName}
                   chartData={collegePieChartData}
                 />
               </TabPane>
