@@ -9,6 +9,7 @@ class RadarChart extends Component {
   static propTypes = {
     style: PropTypes.string,
     className: PropTypes.string,
+    radarData: PropTypes.array.isRequired,
   };
 
   static defaultProps = {
@@ -21,6 +22,8 @@ class RadarChart extends Component {
   }
 
   componentDidMount() {
+    const { radarData } = this.props;
+    const maxData = Math.max.apply(0, radarData);
     const myChart = echarts.init(document.getElementById('radarChart'));
     const option = {
       color: ['#2196f3'],
@@ -35,11 +38,11 @@ class RadarChart extends Component {
             },
           },
           indicator: [
-            { text: 'C', max: 1335 },
-            { text: 'C++', max: 1335 },
-            { text: 'Java', max: 1335 },
-            { text: 'Python2', max: 1335 },
-            { text: 'Python3', max: 1335 },
+            { text: 'C', max: maxData },
+            { text: 'C++', max: maxData },
+            { text: 'Java', max: maxData },
+            { text: 'Python2', max: maxData },
+            { text: 'Python3', max: maxData },
           ],
           center: ['54%', '52%'],
           radius: 200,
@@ -55,7 +58,7 @@ class RadarChart extends Component {
           data: [
             {
               name: '提交语言',
-              value: [1335, 1310, 234, 135, 48],
+              value: radarData,
             },
           ],
         },

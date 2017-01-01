@@ -28,6 +28,14 @@ class ThirdPage extends Component {
 
   render() {
     const { className } = this.props;
+    const radarData = [1335, 1310, 234, 135, 48];
+    const pieData = [
+      { value: 1335, name: 'C' },
+      { value: 1000, name: 'C++' },
+      { value: 234, name: 'Java' },
+      { value: 135, name: 'Python2' },
+      { value: 48, name: 'Python3' },
+    ];
 
     return (
       <div
@@ -56,10 +64,14 @@ class ThirdPage extends Component {
             ease={['easeOutCubic', 'easeInCubic']}
           >
             <div key="radarChart" className={style.chartDiv}>
-              <RadarChart />
+              <RadarChart
+                radarData={radarData}
+              />
             </div>
             <div key="pieChart" className={style.chartDiv}>
-              <PieChart />
+              <PieChart
+                pieData={pieData}
+              />
             </div>
           </QueueAnim>
         </OverPack>

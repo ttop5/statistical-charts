@@ -9,7 +9,7 @@ class PieChart extends Component {
   static propTypes = {
     style: PropTypes.string,
     className: PropTypes.string,
-    // PieData: PropTypes.array.isRequired,
+    pieData: PropTypes.array.isRequired,
   };
 
   static defaultProps = {
@@ -22,7 +22,7 @@ class PieChart extends Component {
   }
 
   componentDidMount() {
-    // const { pieData } = this.props;
+    const { pieData } = this.props;
     const myChart = echarts.init(document.getElementById('pieChart'));
     const option = {
       color: ['#2196f3', '#1f939e', '#00bcd4', '#009688', '#37bdab'],
@@ -53,13 +53,7 @@ class PieChart extends Component {
               show: false,
             },
           },
-          data: [
-            { value: 1335, name: 'C' },
-            { value: 1000, name: 'C++' },
-            { value: 234, name: 'Java' },
-            { value: 135, name: 'Python2' },
-            { value: 48, name: 'Python3' },
-          ],
+          data: pieData,
         },
       ],
     };
