@@ -4,6 +4,7 @@ import inert from 'inert';
 
 import main from './handlers/main';
 import staticFiles from './handlers/staticFiles';
+import * as charts from './handlers/charts';
 
 
 /**
@@ -20,7 +21,11 @@ server.register(
   }
 );
 
-server.route([main, staticFiles]);
+server.route([
+  main,
+  staticFiles,
+  charts.submit,
+]);
 
 export function runServer() {
   server.start(() => {
