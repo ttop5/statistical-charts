@@ -40,3 +40,14 @@ export const submitData = {
     count: [15000, 10000, 20000, 35000, 20000, 30000, 10000, 15000, 10000, 20000, 35000, 20000],
   },
 };
+
+/*
+ * 第三页接口所需数据
+ */
+export const languageData = [
+  { value: 1335, name: 'C' },
+  { value: 1000, name: 'C++' },
+  { value: 234, name: 'Java' },
+  { value: 135, name: 'Python2' },
+  { value: 48, name: 'Python3' },
+];

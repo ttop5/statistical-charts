@@ -11,3 +11,14 @@ export const submit = {
     },
   },
 };
+
+// 第三页数据
+export const language = {
+  method: 'Get',
+  path: '/api/language',
+  config: {
+    handler(request, reply) {
+      return reply(data.languageData);
+    },
+  },
+};
