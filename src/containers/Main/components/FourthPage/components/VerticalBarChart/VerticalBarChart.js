@@ -9,6 +9,7 @@ class VerticalBarChart extends Component {
   static propTypes = {
     style: PropTypes.string,
     className: PropTypes.string,
+    barData: PropTypes.object.isRequired,
   };
 
   static defaultProps = {
@@ -21,6 +22,7 @@ class VerticalBarChart extends Component {
   }
 
   componentDidMount() {
+    const { problemId, passRate } = this.props.barData;
     const myChart = echarts.init(document.getElementById('verticalBarChart'));
     const option = {
       title: {
@@ -46,7 +48,7 @@ class VerticalBarChart extends Component {
       xAxis: [
         {
           type: 'category',
-          data: ['2009', '2008', '2007', '2006', '2005', '2004', '2003', '2002', '2001', '2000'],
+          data: problemId,
           axisTick: {
             alignWithLabel: true,
           },
@@ -67,7 +69,7 @@ class VerticalBarChart extends Component {
           name: '题目低通过率Top10',
           type: 'bar',
           barWidth: '60%',
-          data: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+          data: passRate,
           itemStyle: {
             normal: {
               color: new echarts.graphic.LinearGradient(0, 0, 1, 0, [{

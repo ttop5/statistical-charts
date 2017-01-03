@@ -26,16 +26,24 @@ class FourthPage extends Component {
     this.state = {};
   }
 
-  /* eslint-disable */
   render() {
     const { className } = this.props;
     const problemCount = 2725;
+    const levelBarData = {
+      problemId: ['1009', '1008', '1007', '1006', '1005', '1004', '1003', '1002', '1001', '1000'],
+      commitCount: [7700, 8800, 9900, 11100, 14200, 16000, 18400, 20500, 22600, 24700],
+    };
+    const verticalBarData = {
+      problemId: ['2009', '2008', '2007', '2006', '2005', '2004', '2003', '2002', '2001', '2000'],
+      passRate: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+    };
 
+    /* eslint-disable */
     return (
       <div
         style={this.props.style}
         className={classnames(...className.split(), style.fourthpage)}
-        >
+      >
         <OverPack
           className={`content-template ${this.props.className}`}
           hideProps={{ img: { reverse: true } }}
@@ -60,10 +68,14 @@ class FourthPage extends Component {
             ease={['easeOutCubic', 'easeInCubic']}
           >
             <div key="levelBarChart" className={style.chartDiv}>
-              <LevelBarChart />
+              <LevelBarChart
+                barData={levelBarData}
+              />
             </div>
             <div key="verticalBarChart" className={style.chartDiv}>
-              <VerticalBarChart />
+              <VerticalBarChart
+                barData={verticalBarData}
+              />
             </div>
           </QueueAnim>
         </OverPack>

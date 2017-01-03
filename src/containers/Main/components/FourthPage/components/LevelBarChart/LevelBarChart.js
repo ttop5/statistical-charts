@@ -9,6 +9,7 @@ class LevelBarChart extends Component {
   static propTypes = {
     style: PropTypes.string,
     className: PropTypes.string,
+    barData: PropTypes.object.isRequired,
   };
 
   static defaultProps = {
@@ -21,6 +22,7 @@ class LevelBarChart extends Component {
   }
 
   componentDidMount() {
+    const { problemId, commitCount } = this.props.barData;
     const myChart = echarts.init(document.getElementById('levelBarChart'));
     const option = {
       title: {
@@ -45,7 +47,7 @@ class LevelBarChart extends Component {
       yAxis: [{
         type: 'category',
         name: '题目ID',
-        data: ['1009', '1008', '1007', '1006', '1005', '1004', '1003', '1002', '1001', '1000'],
+        data: problemId,
         axisTick: {
           alignWithLabel: true,
         },
@@ -57,7 +59,7 @@ class LevelBarChart extends Component {
         name: '题目提交量Top10',
         type: 'bar',
         barWidth: '60%',
-        data: [7700, 8800, 9900, 11100, 14200, 16000, 18400, 20500, 22600, 24700],
+        data: commitCount,
         label: {
           normal: {
             show: true,
