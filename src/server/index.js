@@ -26,6 +26,7 @@ server.route([
   staticFiles,
   charts.submit,
   charts.language,
+  charts.problem,
 ]);
 
 export function runServer() {

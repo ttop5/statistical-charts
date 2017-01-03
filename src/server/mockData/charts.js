@@ -51,3 +51,21 @@ export const languageData = [
   { value: 135, name: 'Python2' },
   { value: 48, name: 'Python3' },
 ];
+
+/*
+ * 第四页接口所需数据
+ */
+export const problemData = {
+  // 题目总数
+  allCount: 2800,
+  // 题目提交量Top10
+  levelBarData: {
+    problemId: ['1009', '1008', '1007', '1006', '1005', '1004', '1003', '1002', '1001', '1000'],
+    commitCount: [7700, 8800, 9900, 11100, 14200, 16000, 18400, 20500, 22600, 24700],
+  },
+  // 题目低通过率Top10
+  verticalBarData: {
+    problemId: ['2009', '2008', '2007', '2006', '2005', '2004', '2003', '2002', '2001', '2000'],
+    passRate: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+  },
+};

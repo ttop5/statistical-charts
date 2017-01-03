@@ -22,3 +22,14 @@ export const language = {
     },
   },
 };
+
+// 第四页数据
+export const problem = {
+  method: 'Get',
+  path: '/api/problem',
+  config: {
+    handler(request, reply) {
+      return reply(data.problemData);
+    },
+  },
+};
