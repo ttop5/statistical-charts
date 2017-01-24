@@ -28,4 +28,3 @@ update
 *.ropeproject
 download/*
 .fuse*
-dist
