@@ -43,6 +43,11 @@ class Main extends Component {
     return { main, mainActions };
   }
 
+  componentDidMount() {
+    const { mainActions } = this.props;
+    mainActions.fetchSubmitData();
+  }
+
   render() {
     const options = {
       sectionClassName: 'section',
