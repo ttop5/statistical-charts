@@ -18,6 +18,7 @@ class SecondPage extends Component {
     style: PropTypes.string,
     className: PropTypes.string,
     id: PropTypes.string,
+    // data: PropTypes.object.isRequired,
   };
 
   static defaultProps = {
@@ -32,6 +33,9 @@ class SecondPage extends Component {
   /* eslint-disable */
   render() {
     const { className } = this.props;
+    // const { className, data } = this.props;
+    // const { allCount, day, month, year } = data;
+    // const [ submitCount, dayData, monthData, yearData ] = [ allCount, day, month, year ];
     const submitCount = 2216008;
     const [dayIdName, monthIdName, yearIdName] = ['dayLineChart', 'monthLineChart', 'yearLineChart'];
     const dayData = {

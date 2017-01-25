@@ -49,6 +49,7 @@ class Main extends Component {
   }
 
   render() {
+    const { submitData } = this.props.main.toJS();
     const options = {
       sectionClassName: 'section',
       anchors: ['sectionOne', 'sectionTwo', 'sectionThree'],
@@ -68,7 +69,7 @@ class Main extends Component {
               <FirstPage />
             </Section>
             <Section color="#fff">
-              <SecondPage />
+              <SecondPage data={submitData} />
             </Section>
             <Section color="#fdfcfc">
               <ThirdPage />
