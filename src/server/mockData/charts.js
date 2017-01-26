@@ -1,5 +1,5 @@
 /*
- * 第二页接口所需数据
+ * 提交量数据
  */
 export const submitData = {
   // 提交总数
@@ -42,7 +42,7 @@ export const submitData = {
 };
 
 /*
- * 第三页接口所需数据
+ * 提交语言数据
  */
 export const languageData = [
   { value: 1335, name: 'C' },
@@ -53,7 +53,7 @@ export const languageData = [
 ];
 
 /*
- * 第四页接口所需数据
+ * 题目数据
  */
 export const problemData = {
   // 题目总数
@@ -71,7 +71,7 @@ export const problemData = {
 };
 
 /*
- * 第五页所需数据
+ * 用户分布数据
  */
 export const userData = {
   // 专业

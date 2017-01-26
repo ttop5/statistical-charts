@@ -1,7 +1,7 @@
 import * as data from '../mockData/charts';
 
 
-// 第二页数据
+// 提交量
 export const submit = {
   method: 'Get',
   path: '/api/submit',
@@ -12,7 +12,7 @@ export const submit = {
   },
 };
 
-// 第三页数据
+// 提交语言
 export const language = {
   method: 'Get',
   path: '/api/language',
@@ -23,7 +23,7 @@ export const language = {
   },
 };
 
-// 第四页数据
+// 题目数
 export const problem = {
   method: 'Get',
   path: '/api/problem',
@@ -34,7 +34,7 @@ export const problem = {
   },
 };
 
-// 第五页数据
+// 用户分布
 export const user = {
   method: 'Get',
   path: '/api/user',
