@@ -69,3 +69,33 @@ export const problemData = {
     passRate: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
   },
 };
+
+/*
+ * 第五页所需数据
+ */
+export const userData = {
+  // 专业
+  major: [
+    { value: 2935, name: '计算机科学与技术' },
+    { value: 310, name: '软件工程' },
+    { value: 234, name: '通信工程' },
+    { value: 135, name: '高分子材料' },
+    { value: 48, name: '生物化学' },
+  ],
+  // 学院
+  school: [
+    { value: 335, name: '计算机学院' },
+    { value: 310, name: '电气学院' },
+    { value: 234, name: '车辆工程学院' },
+    { value: 135, name: '理学院' },
+    { value: 548, name: '材料学院' },
+  ],
+  // 学校
+  college: [
+    { value: 2335, name: '山东理工' },
+    { value: 310, name: '山东科技' },
+    { value: 234, name: '中国石油(华东)' },
+    { value: 135, name: '青岛理工' },
+    { value: 548, name: '青岛大学' },
+  ],
+};

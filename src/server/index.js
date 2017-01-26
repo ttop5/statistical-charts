@@ -27,6 +27,7 @@ server.route([
   charts.submit,
   charts.language,
   charts.problem,
+  charts.user,
 ]);
 
 export function runServer() {

@@ -33,3 +33,14 @@ export const problem = {
     },
   },
 };
+
+// 第五页数据
+export const user = {
+  method: 'Get',
+  path: '/api/user',
+  config: {
+    handler(request, reply) {
+      return reply(data.userData);
+    },
+  },
+};
