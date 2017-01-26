@@ -46,6 +46,9 @@ class Main extends Component {
   componentDidMount() {
     const { mainActions } = this.props;
     mainActions.fetchSubmitData();
+    mainActions.fetchLanguageData();
+    mainActions.fetchProblemData();
+    mainActions.fetchUserData();
   }
 
   render() {
