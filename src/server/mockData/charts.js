@@ -1,4 +1,5 @@
 /*
+ * /api/submit
  * 提交量数据
  */
 export const submitData = {
@@ -42,6 +43,7 @@ export const submitData = {
 };
 
 /*
+ * /api/language
  * 提交语言数据
  */
 export const languageData = [
@@ -53,6 +55,7 @@ export const languageData = [
 ];
 
 /*
+ * /api/problem
  * 题目数据
  */
 export const problemData = {
@@ -71,6 +74,7 @@ export const problemData = {
 };
 
 /*
+ * /api/user
  * 用户分布数据
  */
 export const userData = {
