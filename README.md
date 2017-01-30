@@ -30,7 +30,7 @@ yarn start:dist
 ```
 
 ## Example
-[https://ttop5.github.io/statistical-charts/#/?_k=axn6o5](https://ttop5.github.io/statistical-charts/#/?_k=axn6o5)
+[https://ttop5.github.io/statistical-charts](https://ttop5.github.io/statistical-charts)
 
 ## Back End API
 [https://github.com/ttop5/statistical-charts/blob/master/src/server/mockData/charts.js](https://github.com/ttop5/statistical-charts/blob/master/src/server/mockData/charts.js)
